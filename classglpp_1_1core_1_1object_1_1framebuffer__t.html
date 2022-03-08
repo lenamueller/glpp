@@ -17,11 +17,11 @@
   <meta content="An OpenGL Wrapper library for modern C++." property="og:description"/>
   <meta content="An OpenGL Wrapper library for modern C++." itemprop="description"/>
   <meta content="telephone=no" name="format-detection"/>
-  <meta content="Poxy v0.5.0" name="generator"/>
+  <meta content="Poxy v0.5.3" name="generator"/>
   <meta content="no-referrer-when-downgrade" name="referrer"/>
-  <link href="poxy-0.5.0.css" rel="stylesheet"/>
-  <link href="poxy-0.5.0-dark.css" rel="stylesheet"/>
-  <script src="poxy-0.5.0.js"></script>
+  <link href="poxy-0.5.3.css" rel="stylesheet"/>
+  <link href="poxy-0.5.3-dark.css" rel="stylesheet"/>
+  <script src="poxy-0.5.3.js"></script>
 </head>
 <body>
 <header><nav id="navigation">
@@ -87,7 +87,8 @@
           <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
             <dt>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="#a9c735492d4d381a9b6a0256882556bac">framebuffer_t</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a></span>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="#a9c735492d4d381a9b6a0256882556bac">framebuffer_t</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> width,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> height)</span>
             </dt>
             <dd>constructor</dd>
             <dt>
@@ -117,7 +118,7 @@
             </dt>
             <dd>bind framebuffer</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#ac5f9374cd0aff0b85799a4597982239d">height</a>(</span><span class="m-doc-wrap">) const -&gt; </span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#ac5f9374cd0aff0b85799a4597982239d">height</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a></span>
             </dt>
             <dd>get height</dd>
             <dt>
@@ -130,16 +131,20 @@
             <dd>move assignment operator</dd>
             <dt>
               <div class="m-doc-template">template&lt;class T = glm::vec3&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a4cfd1dd22b9f95671a559b7a50dd8c05">pixel_read</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc" href="classglpp_1_1core_1_1object_1_1image__t.html">image_<wbr/>t</a>&lt;T&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a4cfd1dd22b9f95671a559b7a50dd8c05">pixel_read</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> x = 0,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> y = 0) const -&gt; <a class="m-doc" href="classglpp_1_1core_1_1object_1_1image__t.html">image_<wbr/>t</a>&lt;T&gt;</span>
             </dt>
             <dd></dd>
             <dt>
               <div class="m-doc-template">template&lt;class T = glm::vec3&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a15a46803e9d9f0612cef86e0000421ab">pixel_read</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc" href="classglpp_1_1core_1_1object_1_1image__t.html">image_<wbr/>t</a>&lt;T&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a15a46803e9d9f0612cef86e0000421ab">pixel_read</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> x,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> y,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> width,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> height) const -&gt; <a class="m-doc" href="classglpp_1_1core_1_1object_1_1image__t.html">image_<wbr/>t</a>&lt;T&gt;</span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a3eb517e5c7c3fdf2b4779c3c9f3724d9">width</a>(</span><span class="m-doc-wrap">) const -&gt; </span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a3eb517e5c7c3fdf2b4779c3c9f3724d9">width</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a></span>
             </dt>
             <dd>get width</dd>
           </dl>
@@ -166,7 +171,8 @@
           </div></section>
           <section class="m-doc-details" id="a9c735492d4d381a9b6a0256882556bac"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"> glpp::<wbr/>core::<wbr/>object::<wbr/>framebuffer_t::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a9c735492d4d381a9b6a0256882556bac">framebuffer_t</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a></span></span>
+              <span class="m-doc-wrap-bumper"> glpp::<wbr/>core::<wbr/>object::<wbr/>framebuffer_t::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a9c735492d4d381a9b6a0256882556bac">framebuffer_t</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> width,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> height)</span></span>
             </h3>
             <p>constructor</p>
             <table class="m-table m-fullwidth m-flat">
@@ -261,7 +267,7 @@
           </div></section>
           <section class="m-doc-details" id="ac5f9374cd0aff0b85799a4597982239d"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><wbr/>core::<wbr/>object::<wbr/>framebuffer_t::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ac5f9374cd0aff0b85799a4597982239d">height</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> glpp::<wbr/>core::<wbr/>object::<wbr/>framebuffer_t::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ac5f9374cd0aff0b85799a4597982239d">height</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <p>get height</p>
             <table class="m-table m-fullwidth m-flat">
@@ -292,7 +298,8 @@
               <div class="m-doc-template">
                 template&lt;class T = glm::vec3&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classglpp_1_1core_1_1object_1_1image__t.html">image_<wbr/>t</a>&lt;T&gt; glpp::<wbr/>core::<wbr/>object::<wbr/>framebuffer_t::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a4cfd1dd22b9f95671a559b7a50dd8c05">pixel_read</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a></span></span>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classglpp_1_1core_1_1object_1_1image__t.html">image_<wbr/>t</a>&lt;T&gt; glpp::<wbr/>core::<wbr/>object::<wbr/>framebuffer_t::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a4cfd1dd22b9f95671a559b7a50dd8c05">pixel_read</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> x = 0,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> y = 0) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -316,7 +323,10 @@
               <div class="m-doc-template">
                 template&lt;class T = glm::vec3&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classglpp_1_1core_1_1object_1_1image__t.html">image_<wbr/>t</a>&lt;T&gt; glpp::<wbr/>core::<wbr/>object::<wbr/>framebuffer_t::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a15a46803e9d9f0612cef86e0000421ab">pixel_read</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a></span></span>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classglpp_1_1core_1_1object_1_1image__t.html">image_<wbr/>t</a>&lt;T&gt; glpp::<wbr/>core::<wbr/>object::<wbr/>framebuffer_t::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a15a46803e9d9f0612cef86e0000421ab">pixel_read</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> x,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> y,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> width,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> height) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -345,7 +355,7 @@
           </div></section>
           <section class="m-doc-details" id="a3eb517e5c7c3fdf2b4779c3c9f3724d9"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a><wbr/>core::<wbr/>object::<wbr/>framebuffer_t::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a3eb517e5c7c3fdf2b4779c3c9f3724d9">width</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> glpp::<wbr/>core::<wbr/>object::<wbr/>framebuffer_t::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a3eb517e5c7c3fdf2b4779c3c9f3724d9">width</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <p>get width</p>
             <table class="m-table m-fullwidth m-flat">
